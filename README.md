@@ -4,7 +4,10 @@ ProjectConfigFile ConfigFile = new ProjectConfigFile("applicationconfig"/*folder
 
 ConfigFile["user"] = "testuser"; // These values will be written to the file when they are set by the indexer.
 ConfigFile["pass"] = "password123";
+```
 
+**or**
+```csharp
 ConfigFile[0] = "testuser";
 ConfigFile[1] = "password123";
 ```
