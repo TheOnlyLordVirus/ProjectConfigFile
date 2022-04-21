@@ -42,6 +42,7 @@ namespace FileConfig
 
         /// <summary>
         /// Class constructor.
+        /// TO DO: add Dictionary Key / Value support
         /// Settings will be written as: "Setting:value"
         /// </summary>
         public ProjectConfigFile(string tempFolderFilePath, string fileName, string[] settings)
@@ -119,6 +120,9 @@ namespace FileConfig
             get { return $"{Path.GetTempPath()}\\..\\{tempFolderFilePath}\\{fileName}.ini"; }
         }
 
+        /// <summary>
+        /// Get the folder path.
+        /// </summary>
         public string FolderPath
         {
             get { return $"{Path.GetTempPath()}\\..\\{tempFolderFilePath}"; }
