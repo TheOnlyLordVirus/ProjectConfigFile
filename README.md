@@ -35,9 +35,9 @@ string password = ConfigFile[1];
 
 **or**
 ```csharp
-string username = getConfigName(0); // Returns "user"
-string password = getConfigValue("pass"); // Returns "password123"
-string password = getConfigValue(1); // Also returns "password123"
+string username = ConfigFile.getConfigName(0); // Returns "user"
+string password = ConfigFile.getConfigValue("pass"); // Returns "password123"
+string password = ConfigFile.getConfigValue(1); // Also returns "password123"
 ```
 
 # Get file path and name
