@@ -1,6 +1,15 @@
 # Write to the config file
 ```csharp
-ProjectConfigFile ConfigFile = new ProjectConfigFile("applicationconfig"/*folder path*/, "config"/*ini file name*/, new string[] { "user", "pass" });
+ProjectConfigFile ConfigFile = new ProjectConfigFile
+(
+  "applicationconfig"/*folder path*/,
+  "config"/*ini file name*/,
+  new string[] /*Key names*/
+  { 
+    "user", 
+    "pass" 
+  }
+);
 
 ConfigFile["user"] = "testuser"; // These values will be written to the file when they are set by the indexer.
 ConfigFile["pass"] = "password123";
